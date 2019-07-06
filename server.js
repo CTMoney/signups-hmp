@@ -17,7 +17,7 @@ app.get('*', function (req, res) {
   res.sendFile(path.join(__dirname, './client/build/index.html'))
 })
 
-db.sequelize.sync({ force: true }).then(() => {
+db.sequelize.sync({ force: false }).then(() => {
   app.listen(PORT, () => {
     console.log(`✔ Server now on port ${PORT}!`)
   })

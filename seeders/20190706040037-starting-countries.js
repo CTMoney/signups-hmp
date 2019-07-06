@@ -12,7 +12,7 @@ module.exports = {
         isBetaMember: false
       }], {});
     */
-    return queryInterface.bulkInsert('countries', [
+    return queryInterface.bulkInsert('Countries', [
       {
         name: 'Burgundy',
         major: true,
