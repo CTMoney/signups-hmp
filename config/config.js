@@ -17,10 +17,7 @@ module.exports = {
     "operatorsAliases": false
   },
   "production": {
-    "username": process.env.DB_USER,
-    "password": process.env.DB_PASS,
-    "database": process.env.DB,
-    "host": "127.0.0.1",
+    "use_env_variable": "JAWSDB_URL",
     "dialect": "mysql"
   }
 }
