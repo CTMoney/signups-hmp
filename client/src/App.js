@@ -1,26 +1,25 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import API from './util/API'
 
-function App() {
+const App = () => {
+
+  const handleLogin = event => {
+    event.preventDefault()
+    API.loginRedirect()
+    .then(res => {
+      console.log(res)
+    })
+    .then(err => {
+      if (err) console.log(err)
+    })
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+    <h1 id="technologyName">Discord OAuth</h1>
+    <button id="loginBtn" onClick={handleLogin}><p id='loginBtnText'>Login With Discord</p></button>
+    </>
+  )
 }
 
-export default App;
+export default App

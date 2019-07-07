@@ -3,9 +3,6 @@ module.exports = (sequelize, DataTypes) => {
     player_name: {
       type: DataTypes.STRING
     },
-    player_fill: {
-      type: DataTypes.BOOLEAN
-    },
     countryOne: {
       type: DataTypes.STRING
     },

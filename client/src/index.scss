@@ -1,0 +1,79 @@
+$colors: (
+  "discordGrey": #202225,
+  'discordLGrey': lighten(#202225, 15%),
+  'test': #394443,
+  'testL': lighten(#394443, 30%),
+  'testD': darken(#394443, 30%),
+  'discordButton': #444B8B,
+  'discordButtonDark': darken(#444B8B, 15%),
+  'discordButtonLight': lighten(#444B8B, 15%),
+  'discordButtonAlt': #7289da
+);
+
+
+body {
+  height:100%;
+  width:100%;
+  background-color: map-get($colors, "test");
+
+  div {
+
+    #technologyName {
+      display: float;
+      position: relative;
+      font-family: 'PT Sans', sans-serif;
+      color: map-get($colors, 'testL')
+    }
+
+    #loginBtnText {
+      color: map-get($colors, "discordButtonDark");
+      font-size: 35px;
+      font-weight: bolder;
+      margin-bottom: 0px;
+      margin-top: 0px;
+      margin-left: 0px;
+      margin-right: 0px;
+      font-family: 'PT Sans', sans-serif;
+    }
+    
+    #loginBtnText:hover {
+      color: map-get($colors, 'discordButtonLight');
+    }
+
+    #loginBtn:active {
+      outline: 0;
+      border: none;
+      -moz-outline-style: none;
+      outline-style: none;
+      background-color: map-get($colors, 'discordButton');
+      transform:translate(3px, 3px);
+      box-shadow: 5px 4px 5px map-get($colors, 'discordGrey');
+    }
+
+    #loginBtn:focus {
+      outline: 0;
+      border: none;
+      -moz-outline-style: none;
+      outline-style: none;
+    }
+
+    #loginBtn:hover {
+      background-color: map-get($colors, 'discordButton')
+    }
+
+    #loginBtn {
+      border: none;
+      float: right;
+      position: relative;
+      margin-top: 20%;
+      left: -36%;
+      height: 70px;
+      width: 500px;
+      background-color: map-get($colors, 'discordButtonAlt');
+      border-radius: 15px;
+      box-shadow: 8px 7px 8px map-get($colors, 'discordGrey');
+    }
+
+  }
+
+}

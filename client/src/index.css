@@ -1,13 +1,65 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  height: 100%;
+  width: 100%;
+  background-color: #394443;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+body div #technologyName {
+  display: float;
+  position: relative;
+  font-family: 'PT Sans', sans-serif;
+  color: #819593;
 }
+
+body div #loginBtnText {
+  color: #2b2f58;
+  font-size: 35px;
+  font-weight: bolder;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  font-family: 'PT Sans', sans-serif;
+}
+
+body div #loginBtnText:hover {
+  color: #676fb5;
+}
+
+body div #loginBtn:active {
+  outline: 0;
+  border: none;
+  -moz-outline-style: none;
+  outline-style: none;
+  background-color: #444B8B;
+  -webkit-transform: translate(3px, 3px);
+          transform: translate(3px, 3px);
+  -webkit-box-shadow: 5px 4px 5px #202225;
+          box-shadow: 5px 4px 5px #202225;
+}
+
+body div #loginBtn:focus {
+  outline: 0;
+  border: none;
+  -moz-outline-style: none;
+  outline-style: none;
+}
+
+body div #loginBtn:hover {
+  background-color: #444B8B;
+}
+
+body div #loginBtn {
+  border: none;
+  float: right;
+  position: relative;
+  margin-top: 20%;
+  left: -36%;
+  height: 70px;
+  width: 500px;
+  background-color: #7289da;
+  border-radius: 15px;
+  -webkit-box-shadow: 8px 7px 8px #202225;
+          box-shadow: 8px 7px 8px #202225;
+}
+/*# sourceMappingURL=index.css.map */
